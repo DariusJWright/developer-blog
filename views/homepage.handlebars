@@ -1,1 +1,18 @@
-<h1>HERE YOU ARE!!!</h1>
+<ol>
+  {{#each posts}}
+  <li>
+    <article>
+      <div class="title">
+        <span>{{title}}</span>
+      </div>
+      <div class='content'>
+        <span>{{content}}</span>
+      </div>
+      <div class="comment">
+        <span>{{created_at}}</span>
+        <a href="/post/{{id}}">{{comments.length}} comments</a>  
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>
